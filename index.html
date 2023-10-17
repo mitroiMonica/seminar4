@@ -3,11 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>To-Do</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <h1>ToDo App</h1>
-    <script src="main.js"></script>
+    <section id="login">
+      <h1>Login</h1>
+      <form>
+        <input id="loginEmail" type="email" placeholder="email" />
+        <input id="loginPassword" type="password" placeholder="password" />
+        <button id="loginSubmit">LOGIN</button>
+      </form>
+    </section>
+    <section id="register">
+      <h1>Register</h1>
+    </section>
+    <section id="user" hidden>
+      <h1 id="greetings"></h1>
+      <button id="logout">LOGOUT</button>
+    </section>
+    <section id="toDos">
+      <h1>My To-Dos</h1>
+    </section>
+    <section id="">
+      <h1>Add / Edit To-Do</h1>
+      <form>
+        <input type="text" placeholder="task name" id="addEditTaskName" />
+        <select name="status" id="addEditTaskStatus">
+          <option value="to-do">to-do</option>
+          <option value="in progress">in progress</option>
+          <option value="blocked">blocked</option>
+          <option value="done">done</option>
+        </select>
+        <button id="addEditSubmit">Add</button>
+      </form>
+    </section>
+    <!-- ca sa mearga cu import/export trebuie sa pun tipul scriptului module -->
+    <script type="module" src="main.js"></script>
   </body>
 </html>

@@ -2,3 +2,44 @@ body * {
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+button,
+input,
+select {
+  display: block;
+  height: 2.5rem;
+  padding: 7px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  margin: 10px;
+}
+
+button {
+  background-color: bisque;
+}
+
+.taskName {
+  font-weight: bold;
+  color: brown;
+  margin: 10px;
+  width: 50%;
+  /* este span deci o sa puna margine doar stanga dreapta */
+}
+
+.taskStatus {
+  font-size: small;
+  margin: 10px;
+  width: 35%;
+}
+
+.taskDiv {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  max-width: 25rem;
+  margin-bottom: 10px;
+}
+
+.taskDeleteButton {
+  align-self: flex-end;
+}
